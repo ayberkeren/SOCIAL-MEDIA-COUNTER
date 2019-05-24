@@ -58,8 +58,8 @@ def refresh():
     print("--------------------------------------------------------------------")
     print("INSTAGRAM FOLLOWER:",str(follower),"      ","YOUTUBE SUBSCRIBER:",str(subs))
     #print data on the gui
-    yt_subscriber["text"]=str(follower)
-    ig_follower["text"]=str(subs)
+    yt_subscriber["text"]=str(subs)
+    ig_follower["text"]=str(follower)
     #send data to arduino
     arduino.write(str.encode(output))
     #update gui screen
